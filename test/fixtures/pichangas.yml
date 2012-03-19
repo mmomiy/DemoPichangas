@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  titulo: MyString
+  nrojugadores: 1
+  precio: 9.99
+  nrohoras: 1
+  fechainicio: 2012-03-17 11:22:35
+  fechafin: 2012-03-17 11:22:35
+  comentario: MyString
+  estado: MyString
+
+two:
+  titulo: MyString
+  nrojugadores: 1
+  precio: 9.99
+  nrohoras: 1
+  fechainicio: 2012-03-17 11:22:35
+  fechafin: 2012-03-17 11:22:35
+  comentario: MyString
+  estado: MyString

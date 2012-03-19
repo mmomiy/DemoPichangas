@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Titulo:</b>
+  <%= @pichanga.titulo %>
+</p>
+
+<p>
+  <b>Nrojugadores:</b>
+  <%= @pichanga.nrojugadores %>
+</p>
+
+<p>
+  <b>Precio:</b>
+  <%= @pichanga.precio %>
+</p>
+
+<p>
+  <b>Nrohoras:</b>
+  <%= @pichanga.nrohoras %>
+</p>
+
+<p>
+  <b>Fechainicio:</b>
+  <%= @pichanga.fechainicio %>
+</p>
+
+<p>
+  <b>Fechafin:</b>
+  <%= @pichanga.fechafin %>
+</p>
+
+<p>
+  <b>Comentario:</b>
+  <%= @pichanga.comentario %>
+</p>
+
+<p>
+  <b>Estado:</b>
+  <%= @pichanga.estado %>
+</p>
+
+
+<%= link_to 'Edit', edit_pichanga_path(@pichanga) %> |
+<%= link_to 'Back', pichangas_path %>

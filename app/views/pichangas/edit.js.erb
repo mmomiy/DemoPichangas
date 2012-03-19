@@ -1,0 +1,4 @@
+$("#canchas").empty();
+<% @canchas.each do |u| %>
+  $("#canchas").append("<li><a href='/canchas/<%= u.id %>' target='_blank'><%= u.nombre %></a></li>");
+<% end %>

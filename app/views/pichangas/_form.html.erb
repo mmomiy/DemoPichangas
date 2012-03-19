@@ -1,0 +1,54 @@
+<%= form_for(@pichanga) do |f| %>
+  <% if @pichanga.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pichanga.errors.count, "error") %> prohibited this pichanga from being saved:</h2>
+
+      <ul>
+      <% @pichanga.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :titulo %><br />
+    <%= f.text_field :titulo %>
+  </div>
+  <div class="field">
+    <%= f.label :nrojugadores %><br />
+    <%= f.number_field :nrojugadores %>
+  </div>
+  <div class="field">
+    <%= f.label :precio %><br />
+    <%= f.text_field :precio %>
+  </div>
+  <div class="field">
+    <%= f.label :nrohoras %><br />
+    <%= f.number_field :nrohoras %>
+  </div>
+  <div class="field">
+    <%= f.label :fechainicio %><br />
+    <%= f.datetime_select :fechainicio %>
+  </div>
+  <div class="field">
+    <%= f.label :fechafin %><br />
+    <%= f.datetime_select :fechafin %>
+  </div>
+  <div class="field">
+    <%= f.label :comentario %><br />
+    <%= f.text_field :comentario %>
+  </div>
+  <div class="field">
+    <%= f.label :estado %><br />
+    <%= f.text_field :estado %>
+  </div>
+  <div class="field">
+    <%= f.label :cancha %><br />
+    <%= f.text_field :cancha %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+

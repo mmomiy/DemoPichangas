@@ -1,0 +1,24 @@
+<h1>Editing pichanga</h1>
+
+<%= render 'form' %>
+
+<input type="submit" value="Press me please!" id="showCanchas" />
+
+<div id="popupCanchas">
+  <a id="popupCanchasClose">x</a> 
+  <h1>Listado de canchas</h1>
+  <p id="contactArea">
+    <%= form_tag edit_pichanga_path, :method => :get, :remote => true do %>
+      <p>
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Search", :name => nil %>
+      </p>
+    <% end %>
+    <ul id="canchas">
+    </ul>
+  </p>
+</div>
+<div id="backgroundPopup"></div> 
+<br/><br/>
+<%= link_to 'Show', @pichanga %> |
+<%= link_to 'Back', pichangas_path %>

@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @cancha.nombre %>
+</p>
+
+<p>
+  <b>Ubicaci&oacute;n:</b>
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=true&zoom=16&markers=#{@cancha.latitud}%2C#{@cancha.longitud}" %>
+</p>

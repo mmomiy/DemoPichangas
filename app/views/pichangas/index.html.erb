@@ -1,0 +1,14 @@
+<h1>Listing pichangas</h1>
+
+<%= form_tag pichangas_path, :method => :get, :remote => true do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
+
+<div id="pichangas">
+  <%= render @pichangas %>
+</div>
+<br />
+<%= link_to 'New Pichanga', new_pichanga_path %>
